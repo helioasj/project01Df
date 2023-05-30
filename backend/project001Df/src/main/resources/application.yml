@@ -1,0 +1,49 @@
+spring:
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/pautasdb
+    username: root
+    password: 1234
+  jpa:
+    hibernate.ddl-auto: validate
+    generate-ddl: true
+    show-sql: true
+  kafka:
+    producer:
+      bootstrap-servers: localhost:9092
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+topic:
+  vote-result: topic_vote_result
+
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 3000
+        readTimeout: 3000
+        loggerLevel: basic
+      herokuappClient:
+        connectTimeout: 6000
+        readTimeout: 6000
+        loggerLevel: basic
+
+resilience4j:
+  retry:
+    instances:
+      token:
+        maxRetryAttempts: 3
+        waitDuration: 1s
+      channelConfiguration:
+        maxRetryAttempts: 3
+        waitDuration: 1s
+      publishLogsEvents:
+        maxRetryAttempts: 3
+        waitDuration: 300
+
+bancomundial.basepath: http://api.worldbank.org/v2
+
+

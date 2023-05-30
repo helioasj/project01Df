@@ -1,0 +1,97 @@
+{
+	"info": {
+		"_postman_id": "9483e484-b19e-4420-a488-ea8229f1f6b2",
+		"name": "Project 001 - DF",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9581116"
+	},
+	"item": [
+		{
+			"name": "Teste",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/teste",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"teste"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API de indicadores de pobreza do Banco Mundial",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://api.worldbank.org/v2/country/BRA/indicator/SI.POV.DDAY?format=json",
+					"protocol": "http",
+					"host": [
+						"api",
+						"worldbank",
+						"org"
+					],
+					"path": [
+						"v2",
+						"country",
+						"BRA",
+						"indicator",
+						"SI.POV.DDAY"
+					],
+					"query": [
+						{
+							"key": "format",
+							"value": "json"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Countries",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://api.worldbank.org/v2/country",
+					"protocol": "http",
+					"host": [
+						"api",
+						"worldbank",
+						"org"
+					],
+					"path": [
+						"v2",
+						"country"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "WordBank",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/bancomundial",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bancomundial"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

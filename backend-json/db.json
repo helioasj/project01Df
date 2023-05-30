@@ -1,0 +1,26 @@
+{
+  "countries": [
+    {
+      "id": 2,
+      "name": "Bolivia",
+      "code": "BOL"
+    },
+    {
+      "id": 3,
+      "name": "Canada",
+      "code": "CAN"
+    },
+    {
+      "name": "Brazil",
+      "code": "BRA",
+      "id": 4
+    }
+  ],
+  "worldbank": [
+    {
+      "id": 1,
+      "name": "Brazil",
+      "code": "BRA"
+    }
+  ]
+}
