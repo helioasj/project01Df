@@ -6,6 +6,7 @@
 - Swagger
 - Mysql
 - Kafka
+- Angular
 
 ## Pré-requisitos
 - Java (versão 11 ou mais atual)
