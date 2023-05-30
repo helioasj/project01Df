@@ -1,0 +1,13 @@
+<mat-card>
+    <mat-card-title>Exluir País</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Nome" [value]="country.name" name="name" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Codigo" [value]="country.code" name="code" disabled>
+        </mat-form-field>
+    </form>
+    <button mat-raised-button (click)="deleteCountry()" class="excluir">Excluir</button>
+    <button mat-raised-button (click)="cancelar()">Cancelar</button>
+</mat-card>

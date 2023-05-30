@@ -1,0 +1,10 @@
+<mat-card>
+    <mat-card-title>Pesquisar</mat-card-title>
+  
+    <form>
+      <mat-form-field>
+        <input matInput [(ngModel)]="search.code" name="codigo" placeholder="Codigo" required>
+      </mat-form-field>
+    </form>
+    <button mat-raised-button (click)="searchInfoCountry()" class="salvar">Pesquisar</button>
+</mat-card>

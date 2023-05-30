@@ -1,0 +1,29 @@
+<mat-card id="campos">
+    <table  style="width: 100%">
+      <thead>
+        <tr>
+          <th class="l">id</th>
+          <th class="l">Nome</th>
+          <th class="l">Codigo</th>
+          <th class="l">Acoes</th>
+        </tr>
+      </thead>
+  
+      <tbody>
+        <tr *ngFor="let country of countries">
+          
+          <td>{{country.id}}</td>
+          <td>{{country.name}}</td>
+          <td>{{country.code}}</td>
+          <td>
+            <a class="edit" routerLink="/countries/update/{{ country.id }}">
+                <i class="material-icons">edit</i></a>
+            <a class="delete" routerLink="/countries/delete/{{ country.id }}">
+                <i class="material-icons">delete</i></a>
+          </td>
+        </tr>
+  
+  
+      </tbody>
+    </table>
+</mat-card>
